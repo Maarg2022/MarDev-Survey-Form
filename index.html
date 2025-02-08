@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mariDev Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">mariDev Survey Form</h1>
+      <p id="description">Thank you for providing your opinion</p>
+    </header>
+
+    <main>
+      <form
+        id="survey-form"
+        action="https://formspree.io/f/myzkpbey"
+        method="POST"
+      >
+        <fieldset>
+          <legend>Your personal information</legend>
+          <label for="name">Tell us your name:</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Name Doe"
+            required
+          />
+
+          <label for="email">What email should we respond to?</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+          />
+
+          <label for="number">What is your age? (optional):</label>
+          <input
+            id="number"
+            type="number"
+            name="age"
+            min="13"
+            max="120"
+            placeholder="+13"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Which one do you prefer?</legend>
+          <label for="dropdown">Select an option:</label>
+          <select id="dropdown" name="preference" required>
+            <option value="">Select one option</option>
+            <option value="1">Web Development</option>
+            <option value="2">
+              Software and Desktop Application Development
+            </option>
+            <option value="3">Mobile Development</option>
+            <option value="4">Database Programming</option>
+            <option value="5">
+              Artificial Intelligence and Machine Learning
+            </option>
+            <option value="6">Game Development</option>
+            <option value="7">Cybersecurity and Ethical Hacking</option>
+            <option value="8">Systems and Low-Level Programming</option>
+            <option value="9">Cloud Computing and DevOps</option>
+            <option value="10">Internet of Things (IoT) Programming</option>
+            <option value="11">Automation and Scripting</option>
+            <option value="12">
+              Blockchain and Cryptocurrency Development
+            </option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Would you like to learn a new coding language?</legend>
+          <label
+            ><input type="radio" name="learn" value="yes" checked id="inline" />
+            Yes</label
+          >
+          <label
+            ><input type="radio" name="learn" value="no" id="inline" />
+            No</label
+          >
+          <label
+            ><input type="radio" name="learn" value="maybe" id="inline" />
+            Maybe</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            What are your favorite programming, scripting, or markup languages?
+            (Check all that apply)
+          </legend>
+          <label id="checkbox"
+            ><input type="checkbox" name="languages" value="js" id="inline" />
+            JavaScript</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="languages"
+              value="html-css"
+              id="inline"
+            />
+            HTML/CSS</label
+          >
+          <label
+            ><input type="checkbox" name="languages" value="py" id="inline" />
+            Python</label
+          >
+          <label
+            ><input type="checkbox" name="languages" value="sql" id="inline" />
+            SQL</label
+          >
+          <label
+            ><input type="checkbox" name="languages" value="java" id="inline" />
+            Java</label
+          >
+          <label
+            ><input type="checkbox" name="languages" value="node" id="inline" />
+            Node.js</label
+          >
+          <label
+            ><input type="checkbox" name="languages" value="ts" id="inline" />
+            TypeScript</label
+          >
+          <label
+            ><input type="checkbox" name="languages" value="cs" id="inline" />
+            C#</label
+          >
+          <label
+            ><input type="checkbox" name="languages" value="bash" id="inline" />
+            Bash/Shell</label
+          >
+          <label
+            ><input type="checkbox" name="languages" value="cpp" id="inline" />
+            C++</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="languages"
+              value="powershell"
+              id="inline"
+            />
+            PowerShell</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Provide your ideas</legend>
+          <label for="ideas">What would you like to share with us?</label>
+          <textarea
+            id="ideas"
+            name="ideas"
+            rows="4"
+            cols="40"
+            placeholder="Share your ideas..."
+          ></textarea>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 XYZ Surveys</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
