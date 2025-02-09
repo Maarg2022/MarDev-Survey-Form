@@ -7,6 +7,13 @@
 	<li>🔍 Form validation with JavaScript.</li>
 	<li>📱 Responsive design, ensuring compatibility with mobile devices.</li>
 </ul>
+<h2>Screenshots</h2>
+
+![A view of the webpage](https://raw.githubusercontent.com/Maarg2022/MarSurvey-Form/main/assets/surveyFormPicture1.png) 
+<p>This is the second part of the form</p>
+
+![A view of the webpage](assets/surveyFormPicture2.png) 
+
 <h2>📚 Usage</h2>
 <ol>
 <li>Fill in the form fields</li>
